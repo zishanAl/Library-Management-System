@@ -11,7 +11,7 @@ import { JwtModule } from '@nestjs/jwt';
 @Module({
   imports: [
     JwtModule.register({global:true, secret: '123'}),
-    MongooseModule.forRoot('mongodb+srv://library_user:8QjmTj6OUfavHu9O@lms.qfihscr.mongodb.net/?retryWrites=true&w=majority&appName=LMS', 
+    MongooseModule.forRoot('use-your-mongoURL', 
       {
       connectionFactory: (connection) => {
         console.log('MongoDB connected');
